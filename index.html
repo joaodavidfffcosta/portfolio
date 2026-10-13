@@ -1,0 +1,175 @@
+<!doctype html><html lang="pt-PT"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>João David Costa — Websites para negócios locais em Lisboa</title>
+<meta name="description" content="Websites modernos, menus QR e encomendas na mesa para restaurantes e negócios locais em Lisboa.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07091a;--bg2:#0d1130;--card:rgba(255,255,255,.04);--line:rgba(255,255,255,.09);--txt:#eef0fb;--mut:#a3a9c9;--a:#7c5cff;--b:#22d3ee;--c:#f472b6;--g:linear-gradient(120deg,#7c5cff,#22d3ee)}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
+body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--bg);color:var(--txt);line-height:1.65;overflow-x:hidden}
+a{color:inherit;text-decoration:none}.wrap{max-width:1160px;margin:auto;padding:0 24px}
+.serif{font-family:'Instrument Serif',serif;font-style:italic;font-weight:400}
+.grad{background:var(--g);-webkit-background-clip:text;background-clip:text;color:transparent}
+/* bg blobs */
+.blob{position:absolute;border-radius:50%;filter:blur(90px);opacity:.45;z-index:0;pointer-events:none}
+.b1{width:520px;height:520px;background:#7c5cff;top:-160px;left:-120px;animation:float 14s ease-in-out infinite}
+.b2{width:460px;height:460px;background:#0ea5e9;top:60px;right:-160px;animation:float 18s ease-in-out infinite reverse}
+@keyframes float{50%{transform:translate(40px,50px) scale(1.08)}}
+.grid-bg{position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(ellipse at 50% 30%,#000 20%,transparent 70%);opacity:.5}
+/* nav */
+nav{position:fixed;top:14px;left:0;right:0;z-index:20}
+nav .bar{display:flex;justify-content:space-between;align-items:center;padding:10px 12px 10px 20px;border:1px solid var(--line);border-radius:999px;background:rgba(10,12,35,.6);backdrop-filter:blur(14px)}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700}.logo i{width:30px;height:30px;border-radius:9px;background:var(--g);display:grid;place-items:center;font-style:normal;font-size:14px;color:#fff}
+.links{display:flex;align-items:center;gap:6px}.links a{padding:8px 14px;border-radius:99px;color:var(--mut);font-size:14px;font-weight:500;transition:.2s}.links a:hover{color:#fff;background:rgba(255,255,255,.06)}
+#lang{border:1px solid var(--line);background:rgba(255,255,255,.06);color:#fff;border-radius:99px;padding:8px 14px;font:600 13px inherit;font-family:inherit;cursor:pointer}
+/* hero */
+header{position:relative;padding:170px 0 110px;overflow:hidden}
+header .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center}
+.pill{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--card);padding:6px 14px;border-radius:99px;font-size:13px;color:var(--mut)}
+.pill b{width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 4px rgba(34,197,94,.2)}
+h1{font-size:clamp(40px,6.2vw,76px);line-height:1.02;letter-spacing:-.035em;margin:22px 0;font-weight:800}
+h1 .serif{font-size:1.1em;letter-spacing:-.01em}
+.lead{color:var(--mut);font-size:clamp(16px,1.6vw,19px);max-width:560px}
+.btns{margin-top:34px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:14px 22px;border-radius:14px;font-weight:600;font-size:15px;transition:transform .25s,box-shadow .25s,background .25s}
+.btn svg{width:18px;height:18px}.btn:hover{transform:translateY(-3px)}
+.bp{background:var(--g);color:#fff;box-shadow:0 10px 30px -10px rgba(124,92,255,.8)}.bp:hover{box-shadow:0 18px 40px -10px rgba(124,92,255,.9)}
+.bw{background:#25d366;color:#04230f}.bs{border:1px solid var(--line);background:var(--card)}.bs:hover{background:rgba(255,255,255,.09)}
+/* hero visual: phone + qr */
+.visual{position:relative;height:440px}
+.phone{position:absolute;right:40px;top:0;width:220px;height:440px;border-radius:36px;background:#0f1330;border:8px solid #1c2150;box-shadow:0 40px 80px -20px rgba(0,0,0,.7),0 0 0 1px var(--line);padding:18px 14px;animation:bob 6s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-12px)}}
+.phone .nt{width:70px;height:6px;border-radius:9px;background:#272d63;margin:0 auto 16px}
+.ph-h{height:70px;border-radius:14px;background:var(--g);margin-bottom:12px;display:flex;align-items:end;padding:10px;font-weight:700;font-size:13px}
+.ph-r{display:flex;gap:8px;align-items:center;background:rgba(255,255,255,.05);border-radius:12px;padding:9px;margin-bottom:8px;font-size:11px}
+.ph-r i{width:30px;height:30px;border-radius:9px;background:rgba(255,255,255,.1);display:grid;place-items:center;font-style:normal}
+.ph-r span{flex:1;color:var(--mut)}.ph-r em{font-style:normal;background:#7c5cff;border-radius:7px;padding:2px 7px;color:#fff;font-weight:700}
+.ph-btn{margin-top:12px;text-align:center;background:#22d3ee;color:#04202a;border-radius:12px;padding:10px;font-weight:700;font-size:12px}
+.float{position:absolute;border:1px solid var(--line);background:rgba(16,20,52,.85);backdrop-filter:blur(10px);border-radius:16px;padding:14px 16px;font-size:13px;box-shadow:0 20px 40px -15px rgba(0,0,0,.6)}
+.f1{left:0;top:60px;animation:bob 7s ease-in-out infinite .5s}.f2{left:20px;bottom:40px;animation:bob 8s ease-in-out infinite 1s}
+.qr{width:64px;height:64px;display:grid;grid-template-columns:repeat(7,1fr);gap:2px;margin-bottom:8px}.qr i{background:#fff;border-radius:1px}.qr i.o{background:transparent}
+.ticket{font-family:ui-monospace,monospace;font-size:11px;color:#c9cdea;line-height:1.5}
+/* sections */
+section{position:relative;padding:110px 0}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--b)}
+h2{font-size:clamp(32px,4.4vw,52px);letter-spacing:-.03em;line-height:1.08;margin:12px 0 18px;font-weight:800}
+.sub{color:var(--mut);max-width:600px;margin-bottom:50px}
+.svc{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:28px;transition:transform .35s,border-color .35s,background .35s}
+.card:hover{transform:translateY(-6px);border-color:rgba(124,92,255,.5);background:rgba(124,92,255,.07)}
+.ic{width:50px;height:50px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(135deg,rgba(124,92,255,.25),rgba(34,211,238,.18));border:1px solid var(--line);margin-bottom:20px}
+.ic svg{width:24px;height:24px;stroke:#c4b5fd}
+.card h3{font-size:18px;margin-bottom:8px;letter-spacing:-.01em}.card p{color:var(--mut);font-size:15px}
+/* projects */
+.projs{display:grid;gap:28px;grid-template-columns:repeat(3,1fr)}
+.proj{background:var(--card);border:1px solid var(--line);border-radius:24px;overflow:hidden;display:flex;flex-direction:column;transition:transform .4s,box-shadow .4s,border-color .4s}
+.proj:hover{transform:translateY(-8px);box-shadow:0 30px 60px -25px rgba(124,92,255,.55);border-color:rgba(124,92,255,.45)}
+.stage{padding:26px 22px 0;background:radial-gradient(circle at 30% 0%,rgba(124,92,255,.35),transparent 60%),radial-gradient(circle at 90% 100%,rgba(34,211,238,.25),transparent 55%),#0b0f2a}
+.stage.fish{background:radial-gradient(circle at 20% 0%,rgba(14,165,233,.45),transparent 60%),radial-gradient(circle at 90% 100%,rgba(16,185,129,.3),transparent 55%),#071a2a}
+.stage.food{background:radial-gradient(circle at 20% 0%,rgba(244,114,182,.4),transparent 60%),radial-gradient(circle at 90% 100%,rgba(251,146,60,.3),transparent 55%),#1d0c1c}
+.browser{border-radius:12px 12px 0 0;overflow:hidden;border:1px solid rgba(255,255,255,.12);border-bottom:0;background:#11142e;box-shadow:0 -10px 40px -10px rgba(0,0,0,.6)}
+.bbar{display:flex;align-items:center;gap:6px;padding:9px 12px;background:#191d3d}.bbar i{width:9px;height:9px;border-radius:50%;background:#ff5f57}.bbar i:nth-child(2){background:#febc2e}.bbar i:nth-child(3){background:#28c840}
+.bbar span{margin-left:10px;flex:1;background:rgba(255,255,255,.07);border-radius:6px;font-size:10.5px;color:var(--mut);padding:3px 10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.shot{aspect-ratio:16/10;overflow:hidden}.shot img{width:100%;height:100%;object-fit:cover;object-position:top;display:block;transition:transform 2.5s ease}
+.proj:hover .shot img{transform:scale(1.04)}
+.mock{aspect-ratio:16/10;padding:14px;display:flex;flex-direction:column;gap:8px;font-size:10px}
+.mock .mh{display:flex;justify-content:space-between;color:#cfe;font-weight:700}.mock .mh small{color:var(--mut);font-weight:500}
+.mock .hero{flex:1;border-radius:9px;background:linear-gradient(135deg,#0c4a6e,#065f46);display:flex;flex-direction:column;justify-content:center;padding:12px;gap:6px}
+.mock .hero b{font-size:15px;line-height:1.1}.mock .row{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}.mock .row div{background:rgba(255,255,255,.06);border-radius:7px;padding:7px 4px;text-align:center;font-size:9px;color:var(--mut)}
+.mock .chip{align-self:flex-start;background:#22d3ee;color:#022;border-radius:6px;padding:3px 8px;font-weight:700}
+.food .mock .hero{background:linear-gradient(135deg,#831843,#9a3412)}.food .mock .chip{background:#fbbf24}
+.pbody{padding:24px 24px 26px;display:flex;flex-direction:column;flex:1}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}.tag{font-size:12px;font-weight:600;padding:4px 11px;border-radius:99px;background:rgba(124,92,255,.15);color:#c4b5fd;border:1px solid rgba(124,92,255,.25)}
+.tag.soon{background:rgba(251,191,36,.12);color:#fcd34d;border-color:rgba(251,191,36,.3)}
+.proj h3{font-size:20px;letter-spacing:-.015em;margin-bottom:8px}.proj p{color:var(--mut);font-size:14.5px;flex:1}
+.more{margin-top:18px;display:inline-flex;align-items:center;gap:6px;font-weight:700;font-size:14px;color:#a5b4fc}.more:hover{gap:10px;color:#fff}.more{transition:.25s}
+.soonline{margin-top:18px;font-size:13px;color:#fcd34d;display:flex;align-items:center;gap:8px}.soonline b{width:7px;height:7px;border-radius:50%;background:#fbbf24;animation:pulse 1.6s infinite}
+@keyframes pulse{50%{opacity:.25}}
+/* process strip */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:10px}
+.step{padding:26px;border-radius:20px;border:1px solid var(--line);background:linear-gradient(180deg,rgba(255,255,255,.04),transparent)}
+.step em{font-style:normal;font-size:44px;font-weight:800;line-height:1}.step h3{margin:10px 0 6px;font-size:18px}.step p{color:var(--mut);font-size:15px}
+/* contact */
+.cta{position:relative;overflow:hidden;border-radius:32px;padding:80px 40px;text-align:center;border:1px solid rgba(255,255,255,.12);background:radial-gradient(circle at 15% 20%,rgba(124,92,255,.55),transparent 50%),radial-gradient(circle at 85% 80%,rgba(34,211,238,.4),transparent 50%),#0d1130}
+.cta h2{max-width:760px;margin:12px auto 16px}.cta p{color:#c9cdea;max-width:540px;margin:auto}
+.cta .btns{justify-content:center}
+footer{padding:40px 0;color:var(--mut);font-size:14px;border-top:1px solid var(--line);margin-top:80px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+/* reveal */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}.rv.on{opacity:1;transform:none}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+@media(max-width:1000px){header .wrap{grid-template-columns:1fr}.visual{height:380px;max-width:420px;margin:auto;width:100%}.phone{height:380px;width:200px;right:10px}.svc{grid-template-columns:1fr 1fr}.projs{grid-template-columns:1fr 1fr}}
+@media(max-width:680px){.links a{display:none}header{padding:130px 0 70px}section{padding:80px 0}.svc,.projs,.steps{grid-template-columns:1fr}.cta{padding:56px 22px;border-radius:24px}.btn{flex:1;justify-content:center}.visual{height:360px}.phone{width:190px;height:auto;padding:14px 10px 16px}.ph-r{padding:7px;margin-bottom:6px}.ph-h{height:56px}.f1{top:30px}.f2{left:0;bottom:20px}.float{padding:11px 12px}}
+</style></head><body>
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.6 14.2c-.2.7-1.4 1.3-2 1.3-.5.1-1.2.1-1.9-.1-4.2-1.4-6.3-5.5-6.5-5.8-.2-.3-1.3-1.7-1.3-3.3s.8-2.3 1.1-2.6c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.4 2.6 1.6.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.2.1.8-.1 1.3Z"/></symbol>
+<symbol id="mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></symbol>
+<symbol id="tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></symbol>
+<symbol id="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+</defs></svg>
+<nav><div class="wrap"><div class="bar"><a href="#" class="logo"><i>JD</i>João David Costa</a><div class="links"><a href="#servicos" data-pt="Serviços" data-en="Services">Serviços</a><a href="#projetos" data-pt="Projetos" data-en="Projects">Projetos</a><a href="#contacto" data-pt="Contacto" data-en="Contact">Contacto</a><button id="lang" aria-label="Mudar idioma / Change language">EN</button></div></div></div></nav>
+
+<header><div class="blob b1"></div><div class="blob b2"></div><div class="grid-bg"></div>
+<div class="wrap">
+<div>
+<span class="pill rv"><b></b><span data-pt="Disponível para novos projetos · Lisboa" data-en="Available for new projects · Lisbon">Disponível para novos projetos · Lisboa</span></span>
+<h1 class="rv d1" data-pt="Websites que trazem <span class='serif grad'>clientes</span> ao seu negócio." data-en="Websites that bring <span class='serif grad'>customers</span> to your business.">Websites que trazem <span class='serif grad'>clientes</span> ao seu negócio.</h1>
+<p class="lead rv d2" data-pt="Sou o João, programador web em Lisboa. Depois de um curso de programação, dedico-me a criar websites modernos para restaurantes, lojas e negócios locais — incluindo menus QR e encomendas na mesa." data-en="I'm João, a web developer in Lisbon. After a programming course, I build modern websites for restaurants, shops and local businesses — including QR menus and table ordering.">Sou o João, programador web em Lisboa. Depois de um curso de programação, dedico-me a criar websites modernos para restaurantes, lojas e negócios locais — incluindo menus QR e encomendas na mesa.</p>
+<div class="btns rv d3"><a class="btn bp" href="#projetos"><span data-pt="Ver projetos" data-en="See projects">Ver projetos</span><svg><use href="#arr"/></svg></a><a class="btn bw" href="https://wa.me/351932421294"><svg><use href="#wa"/></svg>WhatsApp</a><a class="btn bs" href="mailto:joaodavidfffcosta@gmail.com"><svg><use href="#mail"/></svg><span data-pt="Enviar email" data-en="Send email">Enviar email</span></a></div>
+</div>
+<div class="visual rv d2" aria-hidden="true">
+<div class="phone"><div class="nt"></div><div class="ph-h">Menu · Mesa 4</div>
+<div class="ph-r"><i>🍕</i><span>Pizza</span><em>+</em></div><div class="ph-r"><i>🥗</i><span>Salada</span><em>+</em></div><div class="ph-r"><i>🍰</i><span>Sobremesa</span><em>+</em></div><div class="ph-r"><i>🥤</i><span>Bebida</span><em>+</em></div>
+<div class="ph-btn" data-pt="Enviar pedido" data-en="Send order">Enviar pedido</div></div>
+<div class="float f1"><div class="qr"><i></i><i></i><i></i><i class="o"></i><i></i><i></i><i></i><i></i><i class="o"></i><i></i><i></i><i class="o"></i><i class="o"></i><i></i><i></i><i></i><i></i><i class="o"></i><i></i><i class="o"></i><i></i><i class="o"></i><i></i><i class="o"></i><i></i><i></i><i class="o"></i><i class="o"></i><i></i><i></i><i></i><i class="o"></i><i class="o"></i><i></i><i></i><i class="o"></i><i></i><i class="o"></i><i></i><i class="o"></i><i></i><i></i><i></i><i></i><i></i><i class="o"></i><i></i><i class="o"></i><i></i></div><span data-pt="QR na mesa" data-en="QR at the table">QR na mesa</span></div>
+<div class="float f2"><div class="ticket">🖨️ <span data-pt="COZINHA · MESA 4" data-en="KITCHEN · TABLE 4">COZINHA · MESA 4</span><br>1× Pizza<br>1× Salada</div></div>
+</div>
+</div></header>
+
+<section id="servicos"><div class="wrap">
+<div class="eyebrow rv" data-pt="Serviços" data-en="Services">Serviços</div>
+<h2 class="rv d1" data-pt="Tudo o que o seu negócio precisa <span class='serif grad'>online</span>." data-en="Everything your business needs <span class='serif grad'>online</span>.">Tudo o que o seu negócio precisa <span class='serif grad'>online</span>.</h2>
+<p class="sub rv d2" data-pt="Soluções simples, rápidas e pensadas para negócios locais." data-en="Simple, fast solutions designed for local businesses.">Soluções simples, rápidas e pensadas para negócios locais.</p>
+<div class="svc">
+<div class="card rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div><h3 data-pt="Websites à medida" data-en="Custom websites">Websites à medida</h3><p data-pt="Site profissional com os seus serviços, horários, fotografias, localização e contactos." data-en="A professional site with your services, hours, photos, location and contacts.">Site profissional com os seus serviços, horários, fotografias, localização e contactos.</p></div>
+<div class="card rv d1"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><path d="M14 14h3v3M21 14v.01M14 21h7v-4"/></svg></div><h3 data-pt="Menu QR e encomendas na mesa" data-en="QR menu & table ordering">Menu QR e encomendas na mesa</h3><p data-pt="Os clientes leem o código QR na mesa e encomendam; o pedido é impresso automaticamente na cozinha." data-en="Guests scan the QR code at the table and order; the ticket prints automatically in the kitchen.">Os clientes leem o código QR na mesa e encomendam; o pedido é impresso automaticamente na cozinha.</p></div>
+<div class="card rv d2"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg></div><h3 data-pt="Adaptado a telemóveis" data-en="Mobile-friendly">Adaptado a telemóveis</h3><p data-pt="Rápido e fácil de usar em qualquer ecrã — onde a maioria dos clientes o procura." data-en="Fast and easy on any screen — where most customers look for you.">Rápido e fácil de usar em qualquer ecrã — onde a maioria dos clientes o procura.</p></div>
+<div class="card rv d3"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></svg></div><h3 data-pt="Presença no Google" data-en="Google presence">Presença no Google</h3><p data-pt="Ajuda a configurar o perfil Google do negócio e boas práticas para aparecer nas pesquisas locais." data-en="Help setting up your Google Business Profile and good practices to show up in local searches.">Ajuda a configurar o perfil Google do negócio e boas práticas para aparecer nas pesquisas locais.</p></div>
+</div></div></section>
+
+<section id="projetos"><div class="wrap">
+<div class="eyebrow rv" data-pt="Projetos" data-en="Projects">Projetos</div>
+<h2 class="rv d1" data-pt="Trabalho <span class='serif grad'>recente</span>." data-en="Recent <span class='serif grad'>work</span>.">Trabalho <span class='serif grad'>recente</span>.</h2>
+<p class="sub rv d2" data-pt="Alguns dos sites que desenvolvi." data-en="Some of the sites I've built.">Alguns dos sites que desenvolvi.</p>
+<div class="projs">
+<article class="proj rv"><div class="stage"><div class="browser"><div class="bbar"><i></i><i></i><i></i><span>online.missiontoescape.com</span></div><div class="shot"><img src="img/mte.png" alt="Mission to Escape — escape room online" loading="lazy"></div></div></div>
+<div class="pbody"><div class="tags"><span class="tag" data-pt="Entretenimento" data-en="Entertainment">Entretenimento</span><span class="tag">PT | EN</span></div><h3>Mission to Escape</h3><p data-pt="Escape room online: missão de 60 minutos jogada em equipa no browser. Os jogadores entram com um código de evento recebido por email, escolhem a equipa e o nome de agente e jogam em sincronia. Site bilingue com área de entrada." data-en="Online escape room: a 60-minute team mission played in the browser. Players join with an event code received by email, pick their team and agent name and play in sync. Bilingual site with login area.">Escape room online: missão de 60 minutos jogada em equipa no browser. Os jogadores entram com um código de evento recebido por email, escolhem a equipa e o nome de agente e jogam em sincronia. Site bilingue com área de entrada.</p><a class="more" href="https://online.missiontoescape.com" target="_blank" rel="noopener"><span data-pt="Ver site" data-en="Visit site">Ver site</span><svg width="16" height="16"><use href="#arr"/></svg></a></div></article>
+<article class="proj rv d1"><div class="stage fish"><div class="browser"><div class="bbar"><i></i><i></i><i></i><span>stayhooked.pt</span></div><div class="mock"><div class="mh">🎣 Stay Hooked<small>Mapa · Loja · Marés</small></div><div class="hero"><b>Descobre os Melhores<br>Spots de Pesca</b><span class="chip">Explorar</span></div><div class="row"><div>🗺️ Mapa</div><div>🐟 Capturas</div><div>🌊 Marés</div><div>🛒 Loja</div></div></div></div></div>
+<div class="pbody"><div class="tags"><span class="tag" data-pt="Comunidade e loja" data-en="Community & shop">Comunidade e loja</span></div><h3 data-pt="Stay Hooked — Comunidade de pesca" data-en="Stay Hooked — Fishing community">Stay Hooked — Comunidade de pesca</h3><p data-pt="Plataforma para pescadores com loja de equipamento, mapa interativo colaborativo de spots, registo e partilha de capturas e consulta de marés e tempo." data-en="A platform for anglers with a gear shop, a collaborative interactive map of fishing spots, catch logging and sharing, and tides & weather.">Plataforma para pescadores com loja de equipamento, mapa interativo colaborativo de spots, registo e partilha de capturas e consulta de marés e tempo.</p><a class="more" href="http://stayhooked.pt" target="_blank" rel="noopener"><span data-pt="Ver site" data-en="Visit site">Ver site</span><svg width="16" height="16"><use href="#arr"/></svg></a></div></article>
+<article class="proj rv d2"><div class="stage food"><div class="browser"><div class="bbar"><i></i><i></i><i></i><span data-pt="em breve" data-en="coming soon">em breve</span></div><div class="mock"><div class="mh">🍽️ Sucesso<small data-pt="Mesa 4 · QR" data-en="Table 4 · QR">Mesa 4 · QR</small></div><div class="hero"><b data-pt="Peça diretamente<br>da sua mesa" data-en="Order straight<br>from your table">Peça diretamente<br>da sua mesa</b><span class="chip" data-pt="Ver menu" data-en="View menu">Ver menu</span></div><div class="row"><div>📱 QR</div><div>🧾 <span data-pt="Pedido" data-en="Order">Pedido</span></div><div>🖨️ <span data-pt="Cozinha" data-en="Kitchen">Cozinha</span></div><div>✅ <span data-pt="Pronto" data-en="Ready">Pronto</span></div></div></div></div></div>
+<div class="pbody"><div class="tags"><span class="tag" data-pt="Restaurante" data-en="Restaurant">Restaurante</span><span class="tag soon" data-pt="Em breve" data-en="Coming soon">Em breve</span></div><h3 data-pt="Restaurante Sucesso" data-en="Sucesso Restaurant">Restaurante Sucesso</h3><p data-pt="Website do restaurante com encomendas por código QR na mesa e impressão automática dos pedidos na cozinha." data-en="Restaurant website with QR-code table ordering and automatic order printing in the kitchen.">Website do restaurante com encomendas por código QR na mesa e impressão automática dos pedidos na cozinha.</p><div class="soonline"><b></b><span data-pt="Em desenvolvimento" data-en="In development">Em desenvolvimento</span></div></div></article>
+</div></div></section>
+
+<section style="padding-top:20px"><div class="wrap">
+<div class="eyebrow rv" data-pt="Como funciona" data-en="How it works">Como funciona</div>
+<h2 class="rv d1" data-pt="Simples, do início ao fim." data-en="Simple, from start to finish.">Simples, do início ao fim.</h2>
+<div class="steps">
+<div class="step rv"><em class="grad">01</em><h3 data-pt="Conversa" data-en="Chat">Conversa</h3><p data-pt="Falamos sobre o seu negócio e o que precisa." data-en="We talk about your business and what you need.">Falamos sobre o seu negócio e o que precisa.</p></div>
+<div class="step rv d1"><em class="grad">02</em><h3 data-pt="Proposta" data-en="Proposal">Proposta</h3><p data-pt="Mostro-lhe uma proposta e um primeiro design, sem compromisso." data-en="I show you a proposal and a first design, no obligation.">Mostro-lhe uma proposta e um primeiro design, sem compromisso.</p></div>
+<div class="step rv d2"><em class="grad">03</em><h3 data-pt="Lançamento" data-en="Launch">Lançamento</h3><p data-pt="O site fica online e ajudo-o a dar os primeiros passos." data-en="Your site goes live and I help you get started.">O site fica online e ajudo-o a dar os primeiros passos.</p></div>
+</div></div></section>
+
+<section id="contacto"><div class="wrap"><div class="cta rv">
+<div class="eyebrow" style="color:#c4f1fb" data-pt="Contacto" data-en="Contact">Contacto</div>
+<h2 data-pt="Vamos falar sobre o <span class='serif'>seu negócio</span>?" data-en="Let's talk about <span class='serif'>your business</span>">Vamos falar sobre o <span class='serif'>seu negócio</span>?</h2>
+<p data-pt="Diga-me o que precisa — respondo rapidamente e posso mostrar-lhe uma proposta sem compromisso." data-en="Tell me what you need — I reply quickly and can show you a no-obligation proposal.">Diga-me o que precisa — respondo rapidamente e posso mostrar-lhe uma proposta sem compromisso.</p>
+<div class="btns"><a class="btn bw" href="https://wa.me/351932421294"><svg><use href="#wa"/></svg>WhatsApp</a><a class="btn bs" href="tel:+351932421294"><svg><use href="#tel"/></svg>+351 932 421 294</a><a class="btn bs" href="mailto:joaodavidfffcosta@gmail.com"><svg><use href="#mail"/></svg>joaodavidfffcosta@gmail.com</a></div>
+</div></div></section>
+<footer><div class="wrap"><span>© 2026 João David Costa</span><span data-pt="Feito em Lisboa" data-en="Made in Lisbon">Feito em Lisboa</span></div></footer>
+<script>
+let l='pt';document.getElementById('lang').onclick=e=>{l=l=='pt'?'en':'pt';document.documentElement.lang=l=='pt'?'pt-PT':'en';e.target.textContent=l=='pt'?'EN':'PT';document.querySelectorAll('[data-'+l+']').forEach(x=>x.innerHTML=x.dataset[l])};
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(x=>io.observe(x));
+if(location.hash=='#shot')document.querySelectorAll('.rv').forEach(x=>x.classList.add('on'));
+</script></body></html>
